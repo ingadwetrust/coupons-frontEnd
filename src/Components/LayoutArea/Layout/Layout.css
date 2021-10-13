@@ -1,0 +1,26 @@
+.Layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 13% 84% 3%;
+    grid-template-columns: repeat(8, 1fr); /* fr = Fraction */
+    
+    
+    }
+    .Layout> header, .Layout >footer {
+    grid-column:  span 8;
+    }
+    
+    .Layout> main {
+    grid-column:  span 8;
+    overflow-y: scroll;
+    background-color: rgb(94, 94, 94);
+
+    }
+    
+    .Layout > * {
+        border: 1px solid black;
+    }
+
+  
+

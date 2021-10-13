@@ -1,0 +1,23 @@
+.Logo {
+  position: fixed;
+  left: 15px;
+    top: 15px;
+  align-items: baseline !important;
+  padding: 0 !important;
+  height: 150%;
+  width: 150%;
+}
+.Logo .coup-fun-name {
+  margin-top: 80px;
+  margin-left: 20px;
+  position: absolute;
+  font-size: medium;
+  font-family: 'arial', sans-serif ;
+  text-indent: 2px;
+  color: aliceblue;
+}
+
+.Logo .coup-fun-logo {
+  margin-top: 2px;
+  margin-left: 10px;
+}

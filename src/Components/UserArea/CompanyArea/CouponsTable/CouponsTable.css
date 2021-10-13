@@ -1,0 +1,32 @@
+
+
+.CouponsTable>span>button>.MuiButton-label{   
+    padding: 6px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.CouponsTable>.UpdateCoupon{  
+    color: antiquewhite;  
+}
+.CouponsTable>.Refresh{  
+    color: antiquewhite;  
+}
+.CouponsTable>.AddCoupon >.MuiButton-label{   
+    color: antiquewhite;
+    padding: 6px;
+ 
+}
+.CouponsTable>.UpdateCoupon >.MuiButton-label{   
+    color: antiquewhite;
+    padding: 6px; 
+}
+.CouponsTable>.Refresh >.MuiButton-label{   
+    color: antiquewhite;
+    padding: 6px; 
+}
+.CouponsTable>.Textfield.Box>.InputFindPrice>div>.MuiInputBase-input{
+    color:antiquewhite !important
+}
+
+

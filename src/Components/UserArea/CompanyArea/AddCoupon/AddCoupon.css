@@ -1,0 +1,23 @@
+.AddCoupon {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 100%;
+
+	
+}
+
+.AddCoupon > .data-fields {
+    /* display: grid; */
+    align-items: center;
+    width: 100%;
+}
+
+.textfield{
+    /* border: 2px solid black !important; */
+    font-family: "Mukta", sans-serif !important;  
+    /* border-radius: 5px !important; */
+    margin: 5px !important;
+    
+    padding: 5px;
+    width: 70%;
+}

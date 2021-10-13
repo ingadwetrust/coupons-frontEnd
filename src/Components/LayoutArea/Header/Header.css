@@ -1,0 +1,55 @@
+.Header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.Header>h1{
+    color: whitesmoke;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+    top:2vh;
+}
+.Header>h3{
+    color: whitesmoke;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+    top: 6vh;
+}
+
+.Header>button{
+    color:whitesmoke;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+    top:5%;
+    right: 10px;
+}
+
+.Header>.UserCard{
+    color:whitesmoke;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+    left: 10%;
+    top: 6%; 
+}
+
+.Header>.menu {
+    color:antiquewhite;
+    margin: 0 auto;
+    max-width: 600px;
+    position: absolute;
+    right: 7%;
+    top: 6%;
+}
+/* .Header>.Logo{
+    color: whitesmoke !important;
+    max-width: 600px;
+    position: absolute;
+    left: 2%;
+    top: 1%;    
+   
+} */

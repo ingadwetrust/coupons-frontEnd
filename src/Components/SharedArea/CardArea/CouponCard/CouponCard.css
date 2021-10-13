@@ -1,0 +1,23 @@
+.CouponCard > span{
+    font-size: x-large;
+	color: whitesmoke !important;
+}
+.CouponCard {
+width: 500px;
+}
+.CouponCard>span>.couponUpdate{
+
+    border: 1px solid black !important;
+    margin: 10px !important;
+    border-radius: 10px !important;
+    background-color:  white !important;
+    color: black !important;
+    position: 0px;
+    
+} 
+.CouponCard>.buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+

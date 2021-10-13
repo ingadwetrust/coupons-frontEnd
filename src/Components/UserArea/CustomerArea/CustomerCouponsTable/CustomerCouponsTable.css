@@ -1,0 +1,9 @@
+.CustomerCouponsTable>span>button>.MuiButton-label{   
+    padding: 6px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.CustomerCouponsTable>.Textfield.Box>.InputFindPrice>div>.MuiInputBase-input{
+    color:antiquewhite !important
+}

@@ -1,0 +1,8 @@
+.CustomersTable {
+    background-color: black;
+	
+}
+.CustomersTable>span>a>button>.MuiButton-label  {
+    color: antiquewhite ;
+	
+}
