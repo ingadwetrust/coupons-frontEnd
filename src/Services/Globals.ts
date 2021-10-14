@@ -73,6 +73,6 @@ class ProductionGlobals extends Globals{
 
 }
 
-const globals = process.env.NODE_ENV === "development" ? new DevelopmentGoals() : new ProductionGlobals();
+const globals = process.env.NODE_ENV === "production" ? new DevelopmentGoals() : new ProductionGlobals();
 
 export default globals;
