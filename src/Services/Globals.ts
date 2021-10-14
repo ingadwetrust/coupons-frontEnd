@@ -29,8 +29,10 @@ class DevelopmentGoals extends Globals{
         getCustomerCoupons:"http://localhost:8080/customer/getCustomerCoupons",
         getCustomerCouponsByCategory:"http://localhost:8080/customer/getCustomerCouponsByCategory?category=",
         getCustomerCouponsByMaxPrice:"http://localhost:8080/customer/getCustomerCouponsByPrice?maxPrice=",
+        getCustomerDetails:"http://localhost:8080/customer/customer/getCustomerDetails",
         getCompanyDetails: "http://localhost:8080/company/getCompanyDetails",
         getOneCompany: "http://localhost:8080/admin/getOneCompany?id=",
+        getOneCustomer: "http://localhost:8080/admin/getOneCustomer?id=",
         getOneCouponCompany: "http://localhost:8080/company/getOneCoupon/",
         getOneCouponCustomer: "http://localhost:8080/customer/getOneCoupon/",
         getCouponImage: "http://localhost:8080/pics/"
@@ -62,10 +64,12 @@ class ProductionGlobals extends Globals{
         getAllCoupons:  "https://coupon-manager-gad.herokuapp.com/customer/getAllCoupons",
         purchaseCoupon: "https://coupon-manager-gad.herokuapp.com/customer/purchaseCoupon",
         getCustomerCoupons:"https://coupon-manager-gad.herokuapp.com/customer/getCustomerCoupons",
+        getCustomerDetails:"https://coupon-manager-gad.herokuapp.com/customer/customer/getCustomerDetails",
         getCustomerCouponsByCategory:"https://coupon-manager-gad.herokuapp.com/customer/getCustomerCouponsByCategory?category=",
         getCustomerCouponsByMaxPrice:"https://coupon-manager-gad.herokuapp.com/customer/getCustomerCouponsByPrice?maxPrice=",
         getCompanyDetails: "https://coupon-manager-gad.herokuapp.com/company/getCompanyDetails",
         getOneCompany: "https://coupon-manager-gad.herokuapp.com/admin/getOneCompany?id=",
+        getOneCustomer: "https://coupon-manager-gad.herokuapp.com/admin/getOneCustomer?id=",
         getOneCouponCompany: "https://coupon-manager-gad.herokuapp.com/company/getOneCoupon/",
         getOneCouponCustomer: "https://coupon-manager-gad.herokuapp.com/customer/getOneCoupon/",
         getCouponImage: "https://coupon-manager-gad.herokuapp.com/pics/"

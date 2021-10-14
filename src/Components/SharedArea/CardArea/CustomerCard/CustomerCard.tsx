@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import CustomerModel from "../../../../Models/CustomerModel";
 import { UserType } from "../../../../Models/UserModel";
 import store from "../../../../Redux/Store";
+import globals from "../../../../Services/Globals";
 import jwtAxios from "../../../../Services/JwtAxios";
 import "./CustomerCard.css";
 interface RouteParams {
@@ -28,7 +29,7 @@ class CustomerCard extends Component<CustomerCardProps, CustomerCardState>{
             const id = this.props.match.params.id;
             let url = "";
             if (store.getState().AuthState.user.userType===UserType.CUSTOMER){
-            url = "http://localhost:8080/customer/getCustomerDetails";
+            url = globals.urls.getCustomerDetails;
             }
             if (store.getState().AuthState.user.userType===UserType.ADMIN){
             url = "http://localhost:8080/admin/getOneCustomer?id="+id;
