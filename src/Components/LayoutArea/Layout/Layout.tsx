@@ -3,7 +3,7 @@ import './Layout.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Routing from '../Routing/Routing';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({

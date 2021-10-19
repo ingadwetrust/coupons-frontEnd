@@ -161,9 +161,7 @@ function UpdateCoupon(props: UpdateCouponProps): JSX.Element {
                 value:e.target.value
               })
             }
-            inputRef={register({
-              required: { value: true, message: "Coupon must have category" },
-            })}
+        
             name="category"
             label="Category"
             type="text"

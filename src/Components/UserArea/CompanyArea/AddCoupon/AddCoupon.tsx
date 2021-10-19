@@ -110,7 +110,7 @@ function AddCoupon(props: AddCouponProps): JSX.Element {
             name="title"
             label="Title"
           />
-          <TextField
+           <TextField
           className="textfield"
           variant="outlined"
             onChange={(e) =>
@@ -128,6 +128,7 @@ function AddCoupon(props: AddCouponProps): JSX.Element {
             label="Description"
           />
           <br />
+          
           <FormControl variant="outlined" className="textfield">
               <InputLabel>Category</InputLabel>
           <Select
@@ -135,14 +136,12 @@ function AddCoupon(props: AddCouponProps): JSX.Element {
             onChange={(e) =>
               register({
                 type: "text",
-                required: true,
+               
                 name: "category",
                 value:e.target.value
               })
             }
-            inputRef={register({
-              required: { value: true, message: "Coupon must have category" },
-            })}
+         
             name="category"
             label="Category"
             type="text"
@@ -253,8 +252,8 @@ function AddCoupon(props: AddCouponProps): JSX.Element {
             name="image"
             helperText="Coupon Image"
             type="file"
-          />
-        </Container>
+           />
+        </Container> 
 
         <Button
           onClick={props.onClose}
