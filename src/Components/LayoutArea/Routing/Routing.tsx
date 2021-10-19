@@ -34,10 +34,6 @@ function Routing(): JSX.Element {
                <Route path="/companyCard/:id" component={CompanyCard} exact/>
                <Route path="/customerCard/" component={CustomerCard} exact/>
                <Route path="/customerCard/:id" component={CustomerCard} exact/>
-           
- 
-
-
                <Redirect from="/" to="/home" exact/>
                <Route component = {Page404} />
 

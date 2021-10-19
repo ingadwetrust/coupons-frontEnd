@@ -22,7 +22,6 @@ interface CouponCardProps extends RouteComponentProps<RouteParams> {}
 
 interface CouponCardState {
   coupon: CouponModel;
-  customerCoupons: CouponModel[];
   updateDialog: boolean;
   pic: string;
 }
@@ -33,8 +32,8 @@ class CouponCard extends Component<CouponCardProps, CouponCardState> {
     this.state = {
       coupon: null,
       updateDialog: false,
-      pic: null,
-      customerCoupons: []
+      pic: null
+  
     };
   }
 
@@ -53,18 +52,16 @@ class CouponCard extends Component<CouponCardProps, CouponCardState> {
       }
       if (store.getState().AuthState.user.userType === UserType.CUSTOMER) {
         url = globals.urls.getOneCouponCustomer;
-        const responseArray = await jwtAxios.get<CouponModel[]>(
-          globals.urls.getCustomerCoupons
-        );
+     
         const response = await jwtAxios.get<CouponModel>(url + id);
         this.setState({
           coupon: response.data,
-          customerCoupons: responseArray.data,
+     
         });
       }
 
     } catch (err) {
-      alert("Error: " + err.message);
+      alert("Error: " + err);
     }
   }
 
@@ -117,7 +114,7 @@ class CouponCard extends Component<CouponCardProps, CouponCardState> {
 
         <span className="buttons">
           {store.getState().AuthState.user.userType === UserType.CUSTOMER &&
-            !this.state.customerCoupons.includes(this.state.coupon) && (
+            (
               <Button
                 style={{
                   fontSize: "small",
