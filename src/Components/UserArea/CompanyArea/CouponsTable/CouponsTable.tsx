@@ -146,7 +146,10 @@ class CouponsTable extends Component<CouponsTableProps, CouponsState> {
     };
     let price = 0;
     const handleOpenAddDialog = () => {
-      this.setState({ addDialog: true });
+      console.log(this);
+    this.setState({ addDialog: true });
+
+      
     };
     const handleCloseAddDialog = () => {
         // componentDidMount();
