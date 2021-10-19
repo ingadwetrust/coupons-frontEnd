@@ -121,7 +121,6 @@ class AllCouponsTable extends Component<CouponsTableProps, CouponsState> {
                to={"/couponCard/" + this.state.selectedRow.id}
                >
                <Button className="CouponButton"
-                onClick={() => console.log("so far so good")}
                startIcon={<FontAwesomeIcon icon={faDotCircle}/>} >
                     Show Coupon
                </Button>
